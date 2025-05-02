@@ -408,7 +408,8 @@ img {
 
 /*==================== ABOUT ====================*/
 .about__img {
-  width: 200px;
+  width: 50px;
+  height: 350px;
   border-radius: .5rem;
   justify-self: center;
   align-self: center;
@@ -416,6 +417,7 @@ img {
 
 .about__description {
   text-align: center;
+  padding-top: 50px;
   margin-bottom: var(--mb-2-5);
 }
 
