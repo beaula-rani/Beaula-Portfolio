@@ -407,6 +407,7 @@ img {
 }
 
 /*==================== ABOUT ====================*/
+
 .about__img {
   width: 50px;
   height: 350px;
@@ -414,9 +415,8 @@ img {
   justify-self: center;
   align-self: center;
 }
-
 .about__description {
-  text-align: center;
+ text-align: center;
   padding-top: 50px;
   margin-bottom: var(--mb-2-5);
 }
