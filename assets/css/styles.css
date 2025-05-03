@@ -407,17 +407,15 @@ img {
 }
 
 /*==================== ABOUT ====================*/
-
 .about__img {
-  width: 50px;
-  height: 350px;
+  width: 200px;
   border-radius: .5rem;
   justify-self: center;
   align-self: center;
 }
+
 .about__description {
- text-align: center;
-  padding-top: 50px;
+  text-align: center;
   margin-bottom: var(--mb-2-5);
 }
 
@@ -1115,6 +1113,10 @@ img {
     grid-template-columns: .6fr;
     justify-content: center;
   }
+
+  .button__white {
+    margin-bottom: 2rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1341,24 +1343,4 @@ img {
   .contact__inputs {
     grid-template-columns: repeat(2, 1fr);
   }
-}
-
-/* Hide by default */
-.scrollup {
-  position: fixed;
-  right: 1rem;
-  bottom: -20%;
-  background-color: #0077ff;
-  color: #fff;
-  padding: 0.5rem;
-  border-radius: 50%;
-  z-index: 10;
-  transition: bottom 0.3s ease, opacity 0.3s ease;
-  opacity: 0;
-}
-
-/* Show when scrolling */
-.show-scroll {
-  bottom: 2rem;
-  opacity: 1;
 }
