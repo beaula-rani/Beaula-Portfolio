@@ -190,3 +190,20 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+// Show scroll up button
+function scrollUp() {
+    const scrollUp = document.getElementById('scroll-up');
+    if (this.scrollY >= 200) scrollUp.classList.add('show-scroll');
+    else scrollUp.classList.remove('show-scroll');
+}
+window.addEventListener('scroll', scrollUp);
+
+// Smooth scroll to top on click
+document.getElementById('scroll-up').addEventListener('click', function(e) {
+    e.preventDefault();
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
